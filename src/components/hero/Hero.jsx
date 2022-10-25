@@ -24,7 +24,12 @@ const HeroContainer = styled.div`
     width: 100vw;
     min-height: 100vh;
     background: linear-gradient(0deg, rgb(10, 10, 10) 1%, #1b1b1b);
-    padding: 0vw 20vw 0 20vw;
+    padding: 20vw;
+
+    @media only screen and (max-width: 1050px) {
+    padding: 10vw;
+    /* min-height: 50vh; */
+  }
     
 `
 const HeroTitle = styled.div`
@@ -36,7 +41,7 @@ const HeroMainTitle = styled.h1`
     text-shadow:  0 0 10px black;
 
     @media only screen and (max-width: 1050px) {
-    font-size: 9vw;
+    font-size: clamp(6rem, 9vw, 9rem);
   }
 `
 const HeroSubTitle = styled(HeroMainTitle)`
@@ -45,7 +50,7 @@ const HeroSubTitle = styled(HeroMainTitle)`
     font-family: ${({ theme }) => theme.main.fontFamily.med};
     
     @media only screen and (max-width: 1050px) {
-    font-size: 2vw;
+        font-size: clamp(1.5rem, 2vw, 20px);
   }
 `
 const HeroImage = styled.img`

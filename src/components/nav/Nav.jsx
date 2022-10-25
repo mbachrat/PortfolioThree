@@ -38,7 +38,8 @@ const Wrapper = styled.div`
     z-index: 99;
     transition: background-color 1s, border-bottom 1s;
     
-
+    @media only screen and (max-width: 1050px) {
+    display: none;
 `;
 
 const NavStart = styled.div`
