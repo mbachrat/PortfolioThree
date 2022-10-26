@@ -24,7 +24,7 @@ const HeroContainer = styled.div`
     width: 100vw;
     min-height: 100vh;
     background: linear-gradient(0deg, rgb(10, 10, 10) 1%, #1b1b1b);
-    padding: 20vw;
+    padding: 15vw 20vw 20vw 20vw;
 
     @media only screen and (max-width: 1050px) {
     padding: 10vw;

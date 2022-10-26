@@ -40,6 +40,7 @@ const Wrapper = styled.div`
     
     @media only screen and (max-width: 1050px) {
     display: none;
+    }
 `;
 
 const NavStart = styled.div`
