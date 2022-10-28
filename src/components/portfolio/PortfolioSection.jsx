@@ -97,7 +97,7 @@ const LeftContent = styled.div`
 
     &:hover .theTest {
         filter: blur(12px);
-        
+        opacity: 0.5;
     }
 `
 
@@ -116,6 +116,7 @@ const ImageLoader = styled.img`
   border-radius: 8px;
   transition: opacity 0.5s 0.5s, filter 0.5s;
   filter: blur(25px);
+  opacity: 0.5;
   
   
 
