@@ -217,11 +217,27 @@ const ButtonText = styled.p`
     
 
 
-    &:hover{
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    
+    width: fit-content;
+     position: relative;
+
+     &:hover {
+    ::after {
+      transform: scaleX(1) translateY(26px);
+      transform-origin: left;
     }
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 255, 255, 0.64);
+    transform: scaleX(0) translateY(26px);
+    transform-origin: right;
+    transition: transform 0.5s;
+  }
 `
 
 const Break = styled.hr`

@@ -15,20 +15,20 @@ const Portfolio = ({ portfolioref }) => {
         <PortfolioSection
           header="Finstagram"
           sub="Instagram Clone"
-          desc="A Full Stack clone of Instagram's features and a complete redesign of the UI. Originally built with firebase, it was rebuilt using React for the frontend, GraphQL for the backend, MongoDB for the database, and AWS S3 to store images."
+          desc="A clone of Instagram's features. Currently built with firebase as a back end to manage photo storage and user sign in."
           src={Finsta}
-          codeLink="https://github.com/joshwrn/instagram-clone"
-          demoLink="https://joshwrn.github.io/instagram-clone/#/"
-          tech="React.js, GraphQL, MongoDB, AWS"
-          date="2021"
+          codeLink="https://github.com/mbachrat/instagram-clone"
+          demoLink="https://instagram-clone-8f5dd.firebaseapp.com/"
+          tech="React.js, Firebase, CSS"
+          date="2022"
         />
         <PortfolioSection
           header="Portfolio"
-          sub="React Clothing Store"
-          desc="A front end clothing store built with React, React Router, and CSS. The store allows users to browse, add, and remove items from their cart."
+          sub="Personal Website updates"
+          desc="My personal website updates throughout my learning journey. A front end portfolio built with React, React Router, and CSS."
           src={Test}
-          demoLink="https://joshwrn.github.io/shopping-cart/"
-          codeLink="https://github.com/joshwrn/shopping-cart"
+          demoLink="/webhistory"
+          codeLink="https://github.com/stars/mbachrat/lists/web-portfolios"
           tech="React.js, React Router, CSS"
           date="2021"
         />
@@ -37,7 +37,7 @@ const Portfolio = ({ portfolioref }) => {
       <ButtonContainer
         rel="noreferrer"
         target="_blank"
-        href="https://github.com/joshwrn?tab=repositories" >
+        href="https://github.com/mbachrat?tab=repositories" >
         <ButtonText>View More</ButtonText>
         <FiArrowUpRight size={37} />
       </ButtonContainer>
