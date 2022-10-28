@@ -7,7 +7,7 @@ import {FiArrowUpRight} from "react-icons/fi"
 
 const Portfolio = ({ portfolioref }) => {
   return (
-    <Container>
+    <Container id='portfolio'>
     <Inner>
       <Header>Portfolio</Header>
       <Break/>

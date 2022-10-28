@@ -26,7 +26,7 @@ function App() {
           <GlobalStyles/>
           <div className="App">
             <Nav/>
-            <Hero/>
+            <Hero />
             <Portfolio />
             <About />
             <Footer />

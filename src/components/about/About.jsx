@@ -4,7 +4,7 @@ import YoungMatt from '../../assets/images/YoungMatt.jpeg'
 
 function About() {
   return (
-    <Outer>
+    <Outer id="about">
         <Header>
             About
         </Header>

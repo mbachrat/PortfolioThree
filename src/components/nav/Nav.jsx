@@ -9,9 +9,9 @@ function Nav() {
             <NavText>Matthew Bachraty</NavText>
         </NavStart>
         <NavEnd>
-            <NavTextLink>Portfolio</NavTextLink>
-            <NavTextLink>About</NavTextLink>
-            <NavTextLink>Contact</NavTextLink>
+            <NavTextLink href='#portfolio'>Portfolio</NavTextLink>
+            <NavTextLink href='#about'>About</NavTextLink>
+            <NavTextLink href='#contact'>Contact</NavTextLink>
             
         </NavEnd>
 
@@ -58,7 +58,12 @@ const NavText = styled.p`
     font-family: ${({ theme }) => theme.main.fontFamily.med};
 `
 
-const NavTextLink = styled(NavText)`
+const NavTextLink = styled.a`
+    color: ${({ theme }) => theme.nav.fonts.primary};
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+    font-family: ${({ theme }) => theme.main.fontFamily.med};
     cursor: pointer;
     transition: color 0.5s;
     &:hover {

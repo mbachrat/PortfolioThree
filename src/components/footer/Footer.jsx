@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 function Footer() {
   return (
-    <Outer>
+    <Outer id="contact">
         <Content>
             <MainText>WANT TO GET IN TOUCH?</MainText>
             <SubText rel="noreferrer" target="_blank" href="mailto:bachraty.m@gmail.com">BACHRATY.M@GMAIL.COM</SubText>
