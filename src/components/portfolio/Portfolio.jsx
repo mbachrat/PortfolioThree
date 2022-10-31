@@ -2,7 +2,7 @@ import React from 'react'
 import PortfolioSection from './PortfolioSection'
 import styled from 'styled-components'
 import Finsta from '../../assets/images/Finstagram.png'
-import Test from '../../assets/images/Finstagram.png'
+import Archive from '../../assets/images/Archive.png'
 import {FiArrowUpRight} from "react-icons/fi"
 
 const Portfolio = ({ portfolioref }) => {
@@ -23,10 +23,10 @@ const Portfolio = ({ portfolioref }) => {
           date="2022"
         />
         <PortfolioSection
-          header="Portfolio"
+          header="Portfolios"
           sub="Personal Website updates"
           desc="My personal website updates throughout my learning journey. A front end portfolio built with React, React Router, and CSS."
-          src={Test}
+          src={Archive}
           demoLink="/webhistory"
           codeLink="https://github.com/stars/mbachrat/lists/web-portfolios"
           tech="React.js, React Router, CSS"

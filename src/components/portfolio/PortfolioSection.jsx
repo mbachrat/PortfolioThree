@@ -20,7 +20,7 @@ const PortfolioSection = ({
             <SubTitle>{sub}</SubTitle>
         </TitleBox>
         <ContentBox>
-            <LeftContent>
+            <LeftContent href={demoLink} target="_blank">
                 <ImageLoader 
                 src={src}
                 className="theTest"
@@ -88,7 +88,7 @@ const ContentBox = styled.div`
 const RightContent = styled.div`
 flex: 5;
 `
-const LeftContent = styled.div`
+const LeftContent = styled.a`
     display: flex;
     flex: 6;
     cursor: pointer;
@@ -96,7 +96,7 @@ const LeftContent = styled.div`
     align-items: center;
 
     &:hover .theTest {
-        filter: blur(12px);
+        filter: blur(12px) brightness(480%);
         opacity: 0.5;
     }
 `
@@ -115,14 +115,15 @@ const ImageLoader = styled.img`
   width: 100%;
   border-radius: 8px;
   transition: opacity 0.5s 0.5s, filter 0.5s;
-  filter: blur(25px);
+  filter: blur(25px) brightness(480%);
+  
   opacity: 0.5;
   
   
 
   
   @media only screen and (max-width: 1050px) {
-    filter: blur(10px);
+    filter: blur(10px) brightness(480%);
   }
 `
   const ImageClear = styled.img`

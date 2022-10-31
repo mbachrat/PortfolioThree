@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import sample from '../../assets/images/profilepic.png'
+import sample from '../../assets/images/Pp.png'
 
 function Hero() {
   return (
@@ -10,6 +10,7 @@ function Hero() {
             <HeroSubTitle>Web Developer / UI Designer / Videographer / Content Creator <br />Toronto, Canada</HeroSubTitle>
         </HeroTitle>
         <HeroImage src={sample}/>
+       
       
     </HeroContainer>
   )
@@ -23,8 +24,9 @@ const HeroContainer = styled.div`
     justify-content: center;
     width: 100vw;
     min-height: 100vh;
-    background: linear-gradient(0deg, rgb(10, 10, 10) 1%, #1b1b1b);
+    background: linear-gradient(0deg, rgb(10, 10, 10) 1%, #3c3c4e);
     padding: 15vw 20vw 20vw 20vw;
+    
 
     @media only screen and (max-width: 1050px) {
     padding: 10vw;
@@ -53,6 +55,8 @@ const HeroSubTitle = styled(HeroMainTitle)`
         font-size: clamp(1.5rem, 2vw, 20px);
   }
 `
+
+
 const HeroImage = styled.img`
     justify-content: center;
     align-items: center;

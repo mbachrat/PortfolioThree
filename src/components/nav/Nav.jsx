@@ -1,7 +1,30 @@
 import React from 'react'
 import styled from 'styled-components'
+import {motion, useScroll} from "framer-motion"
+import { useEffect, useState} from "react";
+import { FiCornerDownLeft } from 'react-icons/fi';
 
 function Nav() {
+
+//     let [Blurry, setBlurry] = useState(false);
+
+
+
+
+
+//     let tester;
+
+//     const { scrollY } = useScroll()
+//     useEffect(() => {
+//         return scrollY.onChange((latest) => {
+//           console.log("Page scroll: ", latest)
+//           setBlurry =  latest === 0 ? "true" : "false"
+//         })
+//       }, [])
+   
+      
+// console.log(setBlurry)
+      
   return (
 
     <Wrapper>
@@ -14,8 +37,9 @@ function Nav() {
             <NavTextLink href='#contact'>Contact</NavTextLink>
             
         </NavEnd>
-
+        <Blur></Blur>
     </Wrapper>
+    
   )
 }
 
@@ -23,8 +47,7 @@ export default Nav
 
 
 const Wrapper = styled.div`
-    padding: 1em;
-    background: ${({ theme }) => theme.nav.background};
+    padding: 2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,6 +65,18 @@ const Wrapper = styled.div`
     display: none;
     }
 `;
+
+const Blur = styled.div`
+    opacity: ${({ tester }) => (tester === 0 ? '0' : '1')};
+    background: ${({ theme }) => theme.nav.background};
+    backdrop-filter: blur(100px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    width: 100vw;
+    height: 70px;
+`
 
 const NavStart = styled.div`
     
