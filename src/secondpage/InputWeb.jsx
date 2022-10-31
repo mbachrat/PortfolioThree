@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import WebHistory from './WebHistory'
-import FakeImage from "../assets/images/Finstagram.png"
+import WebOne from "../assets/images/webOne.png"
+import WebTwo from "../assets/images/webTwo.png"
 
 const InputWeb = ({ }) => {
   return (
@@ -11,13 +12,13 @@ const InputWeb = ({ }) => {
         <WebHistory
         weblink = "https://mbachrat.github.io/react-deploy/"
         date = "Feb 2022"
-        src = {FakeImage}
-        title = "Website 1"
+        src = {WebOne}
+        title = "Website 1.0"
          />
         <WebHistory
-        weblink = "https://www.matthewbachraty.com/#mySkills"
+        weblink = "https://mbachrat.github.io/websitetwo/"
         date = "Aug 2022"
-        src = {FakeImage}
+        src = {WebTwo}
         title = "Website 2.0"
          />
          </Content>
