@@ -9,14 +9,14 @@ const InputWeb = ({ }) => {
         <Header>Archives</Header>
         <Content>
         <WebHistory
-        weblink = "https://www.matthewbachraty.com/#mySkills"
+        weblink = "https://mbachrat.github.io/react-deploy/"
         date = "Feb 2022"
         src = {FakeImage}
         title = "Website 1"
          />
         <WebHistory
         weblink = "https://www.matthewbachraty.com/#mySkills"
-        date = "Feb 2022"
+        date = "Aug 2022"
         src = {FakeImage}
         title = "Website 2.0"
          />
@@ -33,6 +33,7 @@ const Outer = styled.div`
 `
 
 const Header = styled.h1`
+padding-left: 20px;
     color: ${({ theme }) => theme.portfolio.fontColor.primary};
     font-family: ${({ theme }) => theme.main.fontFamily.bold};
     font-size: 7rem;
