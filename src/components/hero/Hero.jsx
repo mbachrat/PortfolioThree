@@ -6,7 +6,7 @@ function Hero() {
   return (
     <HeroContainer>
         <HeroTitle>
-            <HeroMainTitle>Hi my name is Matthew Bachraty</HeroMainTitle>
+            <HeroMainTitle>Hi, my name is Matthew Bachraty!</HeroMainTitle>
             <HeroSubTitle>Web Developer / UI Designer / Videographer / Content Creator <br />Toronto, Canada</HeroSubTitle>
         </HeroTitle>
         <HeroImage src={sample}/>
