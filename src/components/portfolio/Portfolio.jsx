@@ -1,17 +1,26 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import PortfolioSection from './PortfolioSection'
 import styled from 'styled-components'
 import Finsta from '../../assets/images/Finstagram.png'
 import Archive from '../../assets/images/Archive.png'
 import {FiArrowUpRight} from "react-icons/fi"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Portfolio = ({ portfolioref }) => {
+
+  useEffect(() => {
+
+    AOS.init({duration: 2000});
+
+  },[])
+
   return (
     <Container id='portfolio'>
     <Inner>
-      <Header>Portfolio</Header>
+      <Header data-aos="fade" data-aos-once="true">Portfolio</Header>
       <Break/>
-      <Feed>
+      <Feed data-aos="fade-up" data-aos-once="true">
         <PortfolioSection
           header="Finstagram"
           sub="Instagram Clone"

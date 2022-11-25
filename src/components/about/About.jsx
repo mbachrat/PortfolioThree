@@ -1,16 +1,28 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import styled from 'styled-components'
 import YoungMatt from '../../assets/images/YoungMatt.jpeg'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function About() {
+
+    useEffect(() => {
+
+        AOS.init({duration: 2000});
+    
+      },[])
+
+
+
+
   return (
     <Outer id="about">
-        <Header>
+        <Header data-aos="fade" data-aos-once="true">
             About
         </Header>
         
         <Content>
-            <LeftContent>
+            <LeftContent data-aos="fade-right" data-aos-once="true">
                 <Desc>
                 I'm a Web Developer based in 🍁 Toronto.
 
@@ -37,7 +49,7 @@ I love building clean, usable and accessible UIs, both on the user-facing and de
                     </Skill>
                 </Skills>
             </LeftContent>
-            <RightContent>
+            <RightContent data-aos="fade-left" data-aos-once="true">
                 <Image src={YoungMatt} width={600} />
             </RightContent>
         </Content>

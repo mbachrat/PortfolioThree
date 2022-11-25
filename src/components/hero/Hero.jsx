@@ -1,15 +1,25 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import styled from 'styled-components';
 import sample from '../../assets/images/Pp.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Hero() {
+
+  useEffect(() => {
+
+    AOS.init({duration: 2000});
+
+  },[])
+
+
   return (
     <HeroContainer>
-        <HeroTitle>
+        <HeroTitle data-aos="fade" data-aos-once="true">
             <HeroMainTitle>Hi, my name is Matthew Bachraty!</HeroMainTitle>
             <HeroSubTitle>Web Developer / UI Designer / Videographer / Content Creator <br />Toronto, Canada</HeroSubTitle>
         </HeroTitle>
-        <HeroImage src={sample}/>
+        <HeroImage src={sample} data-aos="fade" data-aos-once="true" data-aos-delay="50"/>
        
       
     </HeroContainer>
