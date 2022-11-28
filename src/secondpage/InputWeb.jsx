@@ -4,7 +4,7 @@ import WebHistory from './WebHistory'
 import WebOne from "../assets/images/webOne.png"
 import WebTwo from "../assets/images/webTwo.png"
 
-const InputWeb = ({ }) => {
+const InputWeb = () => {
   return (
     <Outer>
         <Header>Archives</Header>

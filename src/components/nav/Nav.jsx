@@ -1,8 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import {motion, useScroll} from "framer-motion"
-import { useEffect, useState} from "react";
-import { FiCornerDownLeft } from 'react-icons/fi';
 
 function Nav() {
 
