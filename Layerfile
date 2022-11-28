@@ -8,6 +8,7 @@ COPY . .
 RUN npm install
 RUN npm run build
 RUN sudo apt install xsel
+RUN npm install -g serve
 RUN BACKGROUND serve -s build
 EXPOSE WEBSITE http://localhost:3000
 
