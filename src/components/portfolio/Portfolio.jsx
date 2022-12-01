@@ -3,6 +3,7 @@ import PortfolioSection from './PortfolioSection'
 import styled from 'styled-components'
 import Finsta from '../../assets/images/Finstagram.png'
 import Archive from '../../assets/images/Archive.png'
+import PPM from "../../assets/images/PPM.png"
 import {FiArrowUpRight} from "react-icons/fi"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -21,6 +22,16 @@ const Portfolio = ({ portfolioref }) => {
       <Header data-aos="fade" data-aos-once="true">Portfolio</Header>
       <Break/>
       <Feed data-aos="fade-up" data-aos-once="true">
+        <PortfolioSection
+          header="Website Build"
+          sub="Progress Property Managment Revamp"
+          desc="Updating a websites design and features. Static home and contact page, built with Render as a backend"
+          src={PPM}
+          codeLink="https://github.com/mbachrat/PPMweb"
+          demoLink="https://ppmweb.onrender.com/"
+          tech="React.js, Render, React-Router, Styled Components"
+          date="2022"
+        />
         <PortfolioSection
           header="Finstagram"
           sub="Instagram Clone"

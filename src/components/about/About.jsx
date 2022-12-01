@@ -16,7 +16,8 @@ function About() {
 
 
   return (
-    <Outer id="about">
+    <Outer >
+        <Anchor id="about"></Anchor>
         <Header data-aos="fade" data-aos-once="true">
             About
         </Header>
@@ -64,6 +65,12 @@ export default About
 const Outer = styled.div`
     background-color: ${({ theme }) => theme.portfolio.background};
     padding: 0 5vw 0 5vw;
+`
+const Anchor = styled.a`
+    display: block;
+    position: relative;
+    top: -80px;
+    visibility: hidden;
 `
 const Header = styled.h1`
     padding-top: 50px;
