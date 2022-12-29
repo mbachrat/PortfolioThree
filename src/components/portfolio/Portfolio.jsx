@@ -27,10 +27,11 @@ const Portfolio = ({ portfolioref }) => {
           sub="Progress Property Managment Revamp"
           desc="Updating a websites design and features. Static home and contact page, built with Render as a backend"
           src={PPM}
-          codeLink="https://github.com/mbachrat/PPMweb"
+          codeLink="https://fern-plough-8c1.notion.site/PROGRESS-PROPERTY-MANAGEMENT-WEB-REDESIGN-ba7e37b6bcb044f480df45eb95c35d3e"
           demoLink="https://ppmweb.onrender.com/"
           tech="React.js, Render, React-Router, Styled Components"
           date="2022"
+          codeText="OVERVIEW"
         />
         <PortfolioSection
           header="Finstagram"
@@ -41,6 +42,7 @@ const Portfolio = ({ portfolioref }) => {
           demoLink="https://instagram-clone-8f5dd.firebaseapp.com/"
           tech="React.js, Firebase, CSS"
           date="2022"
+          codeText="VIEW CODE"
         />
         <PortfolioSection
           header="Portfolios"
@@ -51,6 +53,7 @@ const Portfolio = ({ portfolioref }) => {
           codeLink="https://github.com/stars/mbachrat/lists/web-portfolios"
           tech="React.js, React Router, CSS"
           date="2021"
+          codeText="VIEW CODE"
         />
         
       </Feed>

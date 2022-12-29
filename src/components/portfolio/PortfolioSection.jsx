@@ -12,6 +12,7 @@ const PortfolioSection = ({
     date,
     codeLink,
     demoLink,
+    codeText,
   }) => {
   return (
     <Outer>
@@ -54,7 +55,7 @@ const PortfolioSection = ({
                 </a>
                 <a rel="noreferrer" target="_blank" href={codeLink}>
                     <Button>
-                        <ButtonText>VIEW CODE</ButtonText>
+                        <ButtonText>{codeText}</ButtonText>
                         <FiArrowUpRight size={27}/>
                     </Button>
                 </a>
