@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Finsta from '../../assets/images/Finstagram.png'
 import Archive from '../../assets/images/Archive.png'
 import PPM from "../../assets/images/PPM.png"
+import SMS from "../../assets/images/sms.png"
 import {FiArrowUpRight} from "react-icons/fi"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -22,6 +23,17 @@ const Portfolio = ({ portfolioref }) => {
       <Header data-aos="fade" data-aos-once="true">Portfolio</Header>
       <Break/>
       <Feed data-aos="fade-up" data-aos-once="true">
+        <PortfolioSection
+          header="Web App"
+          sub="SMS LOOPS"
+          desc="Application that allows companies to create effective referral campaigns using text."
+          src={SMS}
+          codeLink="https://fern-plough-8c1.notion.site/SMS-LOOPS-OVERVIEW-6cb7f40519e84beaad1165bc7eea1635"
+          demoLink="https://smsloops.com/"
+          tech="React.js, TypeScript, Tailwind, Node.js, Gatsby, Postgres"
+          date="2023"
+          codeText="OVERVIEW"
+        />
         <PortfolioSection
           header="Website Build"
           sub="Progress Property Managment Revamp"
