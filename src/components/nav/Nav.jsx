@@ -1,29 +1,27 @@
 import React from 'react'
 import styled from 'styled-components'
-import {motion, useScroll} from "framer-motion"
-import { useEffect, useState} from "react";
-import { FiCornerDownLeft } from 'react-icons/fi';
+import { useState, useEffect } from 'react'
+
 
 function Nav() {
 
-//     let [Blurry, setBlurry] = useState(false);
-
-
-
-
-
-//     let tester;
-
-//     const { scrollY } = useScroll()
-//     useEffect(() => {
-//         return scrollY.onChange((latest) => {
-//           console.log("Page scroll: ", latest)
-//           setBlurry =  latest === 0 ? "true" : "false"
-//         })
-//       }, [])
    
-      
-// console.log(setBlurry)
+      const [isTop, setIsTop] = useState(true)
+    
+      useEffect(() => {
+        const handleScroll = () => {
+          const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+          setIsTop(scrollTop === 0)
+          console.log(isTop)
+        }
+    
+        window.addEventListener('scroll', handleScroll)
+    
+        return () => {
+          window.removeEventListener('scroll', handleScroll)
+        }
+      }, [])
+    
       
   return (
 
@@ -37,7 +35,7 @@ function Nav() {
             <NavTextLink href='#contact'>Contact</NavTextLink>
             
         </NavEnd>
-        <Blur></Blur>
+        <Blur inputColor={isTop}></Blur>
     </Wrapper>
     
   )
@@ -67,7 +65,7 @@ const Wrapper = styled.div`
 `;
 
 const Blur = styled.div`
-    opacity: ${({ tester }) => (tester === 0 ? '0' : '1')};
+    opacity: ${( props ) => (props.inputColor === true ? '0' : '1')};
     background: ${({ theme }) => theme.nav.background};
     backdrop-filter: blur(100px);
     position: fixed;
@@ -76,6 +74,7 @@ const Blur = styled.div`
     z-index: -100;
     width: 100vw;
     height: 70px;
+    transition: all 0.5s ease;
 `
 
 const NavStart = styled.div`

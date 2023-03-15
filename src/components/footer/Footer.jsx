@@ -16,7 +16,7 @@ function Footer() {
             </Creator>
             <Links>
             <LinkSection>
-                <Link rel="noreferrer" target="_blank" href="https://www.instagram.com/matthew_bachraty/">Instagram</Link>
+                <Link rel="noreferrer" target="_blank" href="https://www.instagram.com/matthewbachraty/">Instagram</Link>
                 <Link rel="noreferrer" target="_blank" href="https://github.com/mbachrat">GitHub</Link>
                 <Link rel="noreferrer" target="_blank" href="https://fern-plough-8c1.notion.site/SINSEN-Studio-8ff2463987ed4a8f98151cd4a72cb51f">SINSEN</Link>
             </LinkSection>
