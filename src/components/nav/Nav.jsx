@@ -88,7 +88,7 @@ const NavEnd = styled.div`
 
 const NavText = styled.p`
     color: ${({ theme }) => theme.nav.fonts.primary};
-    font-size: 17px;
+    font-size: 18px;
     font-family: ${({ theme }) => theme.main.fontFamily.med};
 `
 

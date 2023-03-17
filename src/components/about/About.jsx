@@ -39,6 +39,8 @@ I love building clean, usable and accessible UIs, both on the user-facing and de
                         <SkillItem>Javascript</SkillItem>
                         <SkillItem>HTML</SkillItem>
                         <SkillItem>CSS</SkillItem>
+                        <SkillItem>THREEJS</SkillItem>
+                        <SkillItem>Tailwind</SkillItem>
                     </Skill>
                     <Skill>
                         <SkillHeader>Design</SkillHeader>
