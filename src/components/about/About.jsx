@@ -27,20 +27,18 @@ function About() {
                 <Desc>
                 I'm a Web Developer based in 🍁 Toronto.
 
-My focus area for the past year and a half has been front-end development with React, building components to help startups with their launches.
-
-I love building clean, usable and accessible UIs, both on the user-facing and dev-facing sides. 
+                Product-oriented with a passion for crafting solutions that bridge the gap between code and design. Proficient in digital design principles, I bring a unique blend of technical expertise and creative spark to deliver user-centric software products
 
                 </Desc>
                 <Skills>
                     <Skill>
-                        <SkillHeader>FrontEnd</SkillHeader>
+                        <SkillHeader>Dev</SkillHeader>
                         <SkillItem>React</SkillItem>
-                        <SkillItem>Javascript</SkillItem>
-                        <SkillItem>HTML</SkillItem>
-                        <SkillItem>CSS</SkillItem>
+                        <SkillItem>PostgresSQL</SkillItem>
+                        <SkillItem>TypeScript</SkillItem>
+                        <SkillItem>HTML & CSS</SkillItem>
                         <SkillItem>THREEJS</SkillItem>
-                        <SkillItem>Tailwind</SkillItem>
+                        <SkillItem>Node.js</SkillItem>
                     </Skill>
                     <Skill>
                         <SkillHeader>Design</SkillHeader>

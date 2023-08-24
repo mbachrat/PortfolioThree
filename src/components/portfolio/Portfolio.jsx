@@ -5,6 +5,7 @@ import Finsta from '../../assets/images/Finstagram.png'
 import Archive from '../../assets/images/Archive.png'
 import PPM from "../../assets/images/PPM.png"
 import SMS from "../../assets/images/sms.png"
+import THGP from "../../assets/images/THGP.png"
 import {FiArrowUpRight} from "react-icons/fi"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -35,6 +36,17 @@ const Portfolio = ({ portfolioref }) => {
           codeText="OVERVIEW"
         />
         <PortfolioSection
+          header="Online Store"
+          sub="The Hungry Goat Pizza"
+          desc="Online reservation for local pizza business"
+          src={THGP}
+          codeLink="https://dribbble.com/shots/22361602-THE-GOAT-PIZZA"
+          demoLink="https://www.thehungrygoatpizza.com/"
+          tech="Next.js, TypeScript, Tailwind, PostgresSQL, Firebase Authentication and Storage"
+          date="2023"
+          codeText="OVERVIEW"
+        />
+        {/* <PortfolioSection
           header="Website Build"
           sub="Progress Property Managment Revamp"
           desc="Updating a websites design and features. Static home and contact page, built with Render as a backend"
@@ -55,7 +67,7 @@ const Portfolio = ({ portfolioref }) => {
           tech="React.js, Firebase, CSS"
           date="2022"
           codeText="VIEW CODE"
-        />
+        /> */}
         <PortfolioSection
           header="Portfolios"
           sub="Personal Website updates"

@@ -20,7 +20,7 @@ function Nav() {
         return () => {
           window.removeEventListener('scroll', handleScroll)
         }
-      }, [])
+      }, [isTop])
     
       
   return (
@@ -33,6 +33,7 @@ function Nav() {
             <NavTextLink href='#portfolio'>Portfolio</NavTextLink>
             <NavTextLink href='#about'>About</NavTextLink>
             <NavTextLink href='#contact'>Contact</NavTextLink>
+            <NavTextLink target='blank' href='https://fern-plough-8c1.notion.site/Matthew-Bachraty-3830f956e6a3410e8bf4d877c8cc6cf3'>Resume</NavTextLink>
             
         </NavEnd>
         <Blur inputColor={isTop}></Blur>

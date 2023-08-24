@@ -23,6 +23,7 @@ function Footer() {
             <LinkSection>
                 <Link rel="noreferrer" target="_blank" href="https://fern-plough-8c1.notion.site/Matthew-Bachraty-3830f956e6a3410e8bf4d877c8cc6cf3">Resume</Link>
                 <Link rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/mbachraty/">LinkedIn</Link>
+                <Link rel="noreferrer" target="_blank" href="https://dribbble.com/MATCKO">Dribble</Link>
             </LinkSection>
             </Links>
         </BottomText>
