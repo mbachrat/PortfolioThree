@@ -6,6 +6,7 @@ import Archive from '../../assets/images/Archive.png'
 import PPM from "../../assets/images/PPM.png"
 import SMS from "../../assets/images/sms.png"
 import THGP from "../../assets/images/THGP.png"
+import OS from "../../assets/images/OS.png"
 import {FiArrowUpRight} from "react-icons/fi"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -43,6 +44,17 @@ const Portfolio = ({ portfolioref }) => {
           codeLink="https://dribbble.com/shots/22361602-THE-GOAT-PIZZA"
           demoLink="https://www.thehungrygoatpizza.com/"
           tech="Next.js, TypeScript, Tailwind, PostgresSQL, Firebase Authentication and Storage"
+          date="2023"
+          codeText="OVERVIEW"
+        />
+        <PortfolioSection
+          header="Email List"
+          sub="Other Sunday"
+          desc="Email list for creative clothing and events brand"
+          src={OS}
+          codeLink="https://www.othersunday.ca/"
+          demoLink="https://www.othersunday.ca/"
+          tech="Next.js, TypeScript, Tailwind, PostgresSQL"
           date="2023"
           codeText="OVERVIEW"
         />
