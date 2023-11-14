@@ -25,6 +25,17 @@ const Portfolio = ({ portfolioref }) => {
       <Header data-aos="fade" data-aos-once="true">Portfolio</Header>
       <Break/>
       <Feed data-aos="fade-up" data-aos-once="true">
+      <PortfolioSection
+          header="Email List"
+          sub="Other Sunday"
+          desc="Email list for creative clothing and events brand"
+          src={OS}
+          codeLink="https://www.othersunday.ca/"
+          demoLink="https://www.othersunday.ca/"
+          tech="Next.js, TypeScript, Tailwind, PostgresSQL"
+          date="2023"
+          codeText="OVERVIEW"
+        />
         <PortfolioSection
           header="Web App"
           sub="SMS LOOPS"
@@ -36,7 +47,7 @@ const Portfolio = ({ portfolioref }) => {
           date="2023"
           codeText="OVERVIEW"
         />
-        <PortfolioSection
+         <PortfolioSection
           header="Online Store"
           sub="The Hungry Goat Pizza"
           desc="Online reservation for local pizza business"
@@ -47,17 +58,9 @@ const Portfolio = ({ portfolioref }) => {
           date="2023"
           codeText="OVERVIEW"
         />
-        <PortfolioSection
-          header="Email List"
-          sub="Other Sunday"
-          desc="Email list for creative clothing and events brand"
-          src={OS}
-          codeLink="https://www.othersunday.ca/"
-          demoLink="https://www.othersunday.ca/"
-          tech="Next.js, TypeScript, Tailwind, PostgresSQL"
-          date="2023"
-          codeText="OVERVIEW"
-        />
+        
+       
+       
         {/* <PortfolioSection
           header="Website Build"
           sub="Progress Property Managment Revamp"
