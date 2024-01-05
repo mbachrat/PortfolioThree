@@ -30,8 +30,8 @@ const Portfolio = ({ portfolioref }) => {
           sub="Other Sunday"
           desc="Email list for creative clothing and events brand"
           src={OS}
-          codeLink="https://www.othersunday.ca/"
-          demoLink="https://www.othersunday.ca/"
+          codeLink="https://osweb-sigma.vercel.app/"
+          demoLink="https://osweb-sigma.vercel.app/"
           tech="Next.js, TypeScript, Tailwind, PostgresSQL"
           date="2023"
           codeText="OVERVIEW"
