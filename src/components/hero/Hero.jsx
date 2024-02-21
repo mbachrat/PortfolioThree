@@ -96,6 +96,7 @@ const HeroContainer = styled.div`
 
     @media only screen and (max-width: 1050px) {
     padding: 10vw;
+    opacity: 1
     /* min-height: 50vh; */
   }
     

@@ -35,8 +35,17 @@ const Portfolio = ({ portfolioref }) => {
           tech="Next.js, TypeScript, Tailwind, PostgresSQL"
           date="2023"
           codeText="OVERVIEW"
+          headerTwo="Web App"
+          subTwo="SMS LOOPS"
+          descTwo="Application that allows companies to create effective referral campaigns using text."
+          srcTwo={SMS}
+          codeLinkTwo="https://fern-plough-8c1.notion.site/SMS-LOOPS-OVERVIEW-6cb7f40519e84beaad1165bc7eea1635"
+          demoLinkTwo="https://smsloops.com/"
+          techTwo="React.js, TypeScript, Tailwind, Node.js, Gatsby, Postgres"
+          dateTwo="2023"
+          codeTextTwo="OVERVIEW"
         />
-        <PortfolioSection
+        {/* <PortfolioSection
           header="Web App"
           sub="SMS LOOPS"
           desc="Application that allows companies to create effective referral campaigns using text."
@@ -46,7 +55,7 @@ const Portfolio = ({ portfolioref }) => {
           tech="React.js, TypeScript, Tailwind, Node.js, Gatsby, Postgres"
           date="2023"
           codeText="OVERVIEW"
-        />
+        />*/}
          <PortfolioSection
           header="Online Store"
           sub="The Hungry Goat Pizza"
@@ -57,7 +66,16 @@ const Portfolio = ({ portfolioref }) => {
           tech="Next.js, TypeScript, Tailwind, PostgresSQL, Firebase Authentication and Storage"
           date="2023"
           codeText="OVERVIEW"
-        />
+          headerTwo="Portfolios"
+          subTwo="Personal Website updates"
+          descTwo="My personal website updates throughout my learning journey. A front end portfolio built with React, React Router, and CSS."
+          srcTwo={Archive}
+          demoLinkTwo="/webhistory"
+          codeLinkTwo="https://github.com/stars/mbachrat/lists/web-portfolios"
+          techTwo="React.js, React Router, CSS"
+          dateTwo="2021"
+          codeTextTwo="VIEW CODE"
+        /> 
         
        
        
@@ -83,7 +101,7 @@ const Portfolio = ({ portfolioref }) => {
           date="2022"
           codeText="VIEW CODE"
         /> */}
-        <PortfolioSection
+        {/* <PortfolioSection
           header="Portfolios"
           sub="Personal Website updates"
           desc="My personal website updates throughout my learning journey. A front end portfolio built with React, React Router, and CSS."
@@ -93,7 +111,7 @@ const Portfolio = ({ portfolioref }) => {
           tech="React.js, React Router, CSS"
           date="2021"
           codeText="VIEW CODE"
-        />
+        /> */}
         
       </Feed>
       <ButtonContainer

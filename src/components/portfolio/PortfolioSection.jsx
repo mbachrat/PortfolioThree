@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import {FiArrowUpRight} from "react-icons/fi"
 
+//write code that counts every project that runs then alternates CSS
 
 const PortfolioSection = ({
     header,
@@ -13,56 +14,120 @@ const PortfolioSection = ({
     codeLink,
     demoLink,
     codeText,
+    headerTwo,
+    subTwo,
+    descTwo,
+    srcTwo,
+    techTwo,
+    dateTwo,
+    codeLinkTwo,
+    demoLinkTwo,
+    codeTextTwo,
   }) => {
   return (
     <Outer>
-        <TitleBox>
-            <Title>{header}</Title>
-            <SubTitle>{sub}</SubTitle>
-        </TitleBox>
-        <ContentBox>
-            <LeftContent href={demoLink} target="_blank">
-                <ImageLoader 
-                src={src}
-                className="theTest"
-                />
-                <ImageClear
-                src={src}
-                />
-            </LeftContent>
-            
-            <RightContent>
-                <Info>
-                    <InfoHeader>Summary</InfoHeader>
-                    <Description>{desc}</Description>
-                </Info>
-                <Data>
-                    <Tech>
-                        <TechHeader>Technologies</TechHeader>
-                        <Technologies>{tech}</Technologies>
-                    </Tech>
-                    <Date>
-                        <DateText>Date</DateText> 
-                        <DateYear>{date}</DateYear>
-                    </Date>
-                </Data>
-                <LinkContainer>
-                <a rel="noreferrer" target="_blank" href={demoLink}>
-                    <Button>
-                        <ButtonText>LIVE PREVIEW</ButtonText>
-                        <FiArrowUpRight size={27}/>
-                    </Button>
-                </a>
-                <a rel="noreferrer" target="_blank" href={codeLink}>
-                    <Button>
-                        <ButtonText>{codeText}</ButtonText>
-                        <FiArrowUpRight size={27}/>
-                    </Button>
-                </a>
-                </LinkContainer>
-            </RightContent>
-        </ContentBox>
-        <Break/>
+        <BoxOne>
+            <TitleBox>
+                <Title>{header}</Title>
+                <SubTitle>{sub}</SubTitle>
+            </TitleBox>
+            <ContentBox>
+                <LeftContent href={demoLink} target="_blank">
+                    <ImageLoader 
+                    src={src}
+                    className="theTest"
+                    />
+                    <ImageClear
+                    src={src}
+                    />
+                </LeftContent>
+                
+                <RightContent>
+                    <Info>
+                        <InfoHeader>Summary</InfoHeader>
+                        <Description>{desc}</Description>
+                    </Info>
+                    <Data>
+                        <Tech>
+                            <TechHeader>Technologies</TechHeader>
+                            <Technologies>{tech}</Technologies>
+                        </Tech>
+                        <Date>
+                            <DateText>Date</DateText> 
+                            <DateYear>{date}</DateYear>
+                        </Date>
+                    </Data>
+                    <LinkContainer>
+                    <a rel="noreferrer" target="_blank" href={demoLink}>
+                        <Button>
+                            <ButtonText>LIVE PREVIEW</ButtonText>
+                            <FiArrowUpRight size={27}/>
+                        </Button>
+                    </a>
+                    <a rel="noreferrer" target="_blank" href={codeLink}>
+                        <Button>
+                            <ButtonText>{codeText}</ButtonText>
+                            <FiArrowUpRight size={27}/>
+                        </Button>
+                    </a>
+                    </LinkContainer>
+                </RightContent>
+                
+            </ContentBox>
+            <Break/>
+        </BoxOne>
+        
+        <BoxOne>
+            <TitleBox>
+                <Title>{headerTwo}</Title>
+                <SubTitle>{subTwo}</SubTitle>
+            </TitleBox>
+            <ContentBoxTwo>
+               
+                
+                <RightContent>
+                    <Info>
+                        <InfoHeader>Summary</InfoHeader>
+                        <Description>{descTwo}</Description>
+                    </Info>
+                    <Data>
+                        <Tech>
+                            <TechHeader>Technologies</TechHeader>
+                            <Technologies>{techTwo}</Technologies>
+                        </Tech>
+                        <Date>
+                            <DateText>Date</DateText> 
+                            <DateYear>{dateTwo}</DateYear>
+                        </Date>
+                    </Data>
+                    <LinkContainer>
+                    <a rel="noreferrer" target="_blank" href={demoLinkTwo}>
+                        <Button>
+                            <ButtonText>LIVE PREVIEW</ButtonText>
+                            <FiArrowUpRight size={27}/>
+                        </Button>
+                    </a>
+                    <a rel="noreferrer" target="_blank" href={codeLinkTwo}>
+                        <Button>
+                            <ButtonText>{codeTextTwo}</ButtonText>
+                            <FiArrowUpRight size={27}/>
+                        </Button>
+                    </a>
+                    </LinkContainer>
+                </RightContent>
+
+                <LeftContent href={demoLinkTwo} target="_blank">
+                    <ImageLoader 
+                    src={srcTwo}
+                    className="theTest"
+                    />
+                    <ImageClear
+                    src={srcTwo}
+                    />
+                </LeftContent>
+            </ContentBoxTwo>
+            <Break/>
+        </BoxOne>
     </Outer>
   )
 }
@@ -70,21 +135,37 @@ const PortfolioSection = ({
 export default PortfolioSection
 
 const Outer = styled.div`
-    width: 100%;
-    padding-bottom: 30px;
+   
     
 `
 const TitleBox = styled.div`
+
   
 `
 const ContentBox = styled.div`
     padding-top: 80px;
     display: flex;
+   
     gap: 50px;
     @media only screen and (max-width: 1050px) {
+    display: flex;
     flex-direction: column;
-    padding-top: 40px;
     }
+`
+const ContentBoxTwo = styled.div`
+    padding-top: 80px;
+    display: flex;
+   
+    gap: 50px;
+    @media only screen and (max-width: 1050px) {
+    display: flex;
+    flex-direction: column-reverse;
+    }
+`
+const BoxOne = styled.div`
+     width: 100%;
+    padding-bottom: 30px;
+    
 `
 const RightContent = styled.div`
 flex: 5;
@@ -101,7 +182,6 @@ const LeftContent = styled.a`
         opacity: 0.5;
     }
 `
-
 const Title = styled.h2`
     color: ${({ theme }) => theme.portfolio.fontColor.primary};
     font-family: ${({ theme }) => theme.main.fontFamily.bold};
